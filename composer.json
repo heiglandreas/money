@@ -1,0 +1,26 @@
+{
+    "name": "heigl_org/money",
+    "description": "A money-VO for real usage",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andreas Heigl",
+            "email": "andreas@heigl.org"
+        }
+    ],
+    "require": {},
+    "autoload" : {
+        "psr-4" : {
+            "Org_Heigl\\ValueObject\\Money\\" : "src/"
+        }
+    },
+    "autoload-dev" : {
+        "psr-4" : {
+            "Org_Heigl\\ValueObject\\MoneyTest\\" : "tests/"
+        }
+    },
+    "require-dev": {
+        "captainhook/plugin-composer": "^4.0"
+    }
+}
