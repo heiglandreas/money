@@ -9,7 +9,9 @@
             "email": "andreas@heigl.org"
         }
     ],
-    "require": {},
+    "require": {
+        "php" : "^7.2"
+    },
     "autoload" : {
         "psr-4" : {
             "Org_Heigl\\ValueObject\\Money\\" : "src/"
@@ -21,6 +23,7 @@
         }
     },
     "require-dev": {
-        "captainhook/plugin-composer": "^4.0"
+        "captainhook/plugin-composer": "^4.0",
+        "phpunit/phpunit": "^8.0"
     }
 }
