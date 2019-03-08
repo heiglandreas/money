@@ -23,6 +23,31 @@ float to the Formatter.
 ## Installation
 
     composer require org_heigl/money
+    
+## Usage
+
+You can create a Money-Object like this from a string-representation:
+
+```php
+$money = Money::createFromString('1,5');
+```
+
+You can either use `,` (comma) or `.` (dot) as decimal separator
+
+Alternate form would be like this:
+```php
+$money = Money::create('1', '5');
+```
+
+In both cases a "No Currency" Currency will be used.
+
+To use a specific currency (see the content of the folder src/Currency for supported currencies) you can create an instance like this:
+
+```php
+$money  Money::create('1', '5', Currency::EURO);
+// OR
+$money = Money::createFromString('1,5', Currency::EURO);
+```
 
 ## License
 
